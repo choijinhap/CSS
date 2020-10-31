@@ -1,0 +1,29 @@
+@font-face {
+  font-family: 'Anton';
+  src: url('Anton-Regular.ttf');
+}
+body {
+  font-family: 'Anton', 'sans-serif';
+}
+#product-overview {
+  background: red;
+}
+section {
+  background: blue;
+}
+
+h1 {
+  color: white;
+  font-family: 'Anton', sans-serif;
+}
+
+.section-title {
+  color: greenyellow;
+}
+
+h2 + p {
+  background: indianred;
+}
+div + p {
+  background: indianred;
+}
