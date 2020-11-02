@@ -2,11 +2,18 @@
   font-family: 'Anton';
   src: url('Anton-Regular.ttf');
 }
+* {
+  box-sizing: border-box;
+}
 body {
-  font-family: 'Anton', 'sans-serif';
+  margin: 0;
+  font-family: 'sans-serif';
 }
 #product-overview {
-  background: red;
+  background: url('./freedom.jpg');
+  width: 100%;
+  height: 500px;
+  padding: 10px;
 }
 section {
   background: blue;
@@ -26,4 +33,72 @@ h2 + p {
 }
 div + p {
   background: indianred;
+}
+
+.main-header {
+  width: 100%;
+  background: #2ddf5c;
+  padding: 8px 16px;
+}
+/* .main-index{
+    display: inline-block;
+} */
+.main-header > div {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.main-header__brand {
+  color: #0e4f1f;
+  text-decoration: none;
+  font-size: 19px;
+  padding-left: 10px;
+  font-weight: bold;
+}
+
+.main-nav {
+  display: inline-block;
+  text-align: right;
+  width: calc(100% - 80px);
+  vertical-align: middle;
+}
+.main-nav__items {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.main-nav__item {
+  display: inline-block;
+  margin: 0 16px;
+}
+.main-nav__item > a {
+  color: #0e4f1f;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 3px 0;
+}
+
+.main-nav__item > a:hover,
+.main-nav__item > a:active {
+  color: white;
+  font-weight: bold;
+  border-bottom: 5px solid white;
+}
+
+p::first-letter {
+  color: red;
+  font-size: 20px;
+}
+.main-nav__item--cta > a {
+  color: white;
+  background: red;
+  padding: 8px 16px;
+  border-radius: 8px;
+}
+
+.main-nav__item--cta > a:hover,
+.main-nav__item--cta > a:after {
+  color: red;
+  background: white;
+  border: none;
 }
