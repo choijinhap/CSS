@@ -1,0 +1,59 @@
+main {
+  padding-top: 32px;
+}
+.plan {
+  background: lightgreen;
+  width: 80%;
+  border: 2px solid black;
+  border-left: none;
+  margin: 16px 0;
+}
+
+.plan > a {
+  display: block;
+  padding: 30px;
+  text-decoration: none;
+  color: black;
+}
+
+.plan__title {
+  color: black;
+  font-size: 25px;
+}
+.plan__subtitle {
+  color: grey;
+}
+.plan__description {
+  background: white;
+  padding: 10px;
+  border: 3px solid black;
+  font-size: 20px;
+}
+
+.plan.premium {
+  background: darkgreen;
+  float: right;
+  border-right: none;
+  text-align: right;
+}
+
+.plan.premium:hover,
+.plan.premium:active {
+  border-right: none;
+  border-left: 3px solid orange;
+}
+.quickfix {
+  clear: both;
+}
+.plan__title.premium {
+  color: white;
+}
+.plan__subtitle.premium {
+  color: lightgrey;
+}
+
+.plan:hover,
+.plan:active {
+  border: 3px solid orange;
+  border-left: none;
+}
