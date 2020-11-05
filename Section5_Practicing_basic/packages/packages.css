@@ -1,7 +1,15 @@
 main {
   padding-top: 32px;
 }
+.background {
+  background: url('../images/plans-background.jpg');
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -1;
+}
 .plan {
+  position: relative;
   background: lightgreen;
   width: 80%;
   border: 2px solid black;
@@ -19,6 +27,17 @@ main {
 .plan__title {
   color: black;
   font-size: 25px;
+}
+.plan__badge {
+  position: absolute;
+  top: 20px;
+  right: 0;
+  margin: 20px;
+  padding: 5px;
+  font-size: 12px;
+  color: white;
+  background: red;
+  border-radius: 15px;
 }
 .plan__subtitle {
   color: grey;
