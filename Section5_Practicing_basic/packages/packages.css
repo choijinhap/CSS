@@ -1,11 +1,11 @@
 main {
-  padding-top: 32px;
+  padding-top: 2rem;
 }
 .background {
   background: url('../images/plans-background.jpg') center/cover border-box;
   filter: grayscale(30%);
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   position: fixed;
   z-index: -1;
 }
@@ -13,33 +13,33 @@ main {
   position: relative;
   background: lightgreen;
   width: 80%;
-  border: 2px solid black;
+  border: 0.1rem solid black;
   border-left: none;
-  margin: 16px 0;
+  margin: 1rem 0;
   z-index: auto;
 }
 
 .plan > a {
   display: block;
-  padding: 30px;
+  padding: 2rem;
   text-decoration: none;
   color: black;
 }
 
 .plan__title {
   color: black;
-  font-size: 25px;
+  font-size: 1.5rem;
 }
 .plan__badge {
   position: absolute;
-  top: 20px;
+  top: 1.3rem;
   right: 0;
-  margin: 20px;
-  padding: 5px;
-  font-size: 12px;
+  margin: 1.3rem;
+  padding: 0.3rem;
+  font-size: 0.9rem;
   color: white;
   background: red;
-  border-radius: 15px;
+  border-radius: 8px;
   z-index: 10;
 }
 .plan__subtitle {
@@ -47,9 +47,9 @@ main {
 }
 .plan__description {
   background: white;
-  padding: 10px;
-  border: 3px solid black;
-  font-size: 20px;
+  padding: 0.6rem;
+  border: 0.2rem solid black;
+  font-size: 1.3rem;
 }
 
 .plan.premium {
@@ -62,7 +62,7 @@ main {
 .plan.premium:hover,
 .plan.premium:active {
   border-right: none;
-  border-left: 3px solid orange;
+  border-left: 0.2rem solid orange;
 }
 .quickfix {
   clear: both;
@@ -76,6 +76,6 @@ main {
 
 .plan:hover,
 .plan:active {
-  border: 3px solid orange;
+  border: 0.2rem solid orange;
   border-left: none;
 }
