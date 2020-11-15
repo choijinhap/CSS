@@ -68,7 +68,7 @@ body {
 }
 
 .main-nav {
-  display: inline-block;
+  display: none;
   text-align: right;
   width: calc(100% - 120px);
   vertical-align: middle;
@@ -158,8 +158,8 @@ body {
   padding: 0;
 }
 .main-footer__list {
-  display: inline-block;
-  margin: 0 16px;
+  display: block;
+  margin: 1rem 0;
 }
 
 .main-footer__list > a {
@@ -173,4 +173,17 @@ body {
 }
 .open {
   display: block;
+}
+
+@media (min-width: 40rem) {
+  .toggle-button {
+    display: none;
+  }
+  .main-nav {
+    display: inline-block;
+  }
+  .main-footer__list {
+    display: inline-block;
+    margin: 0 1rem;
+  }
 }
