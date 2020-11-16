@@ -7,6 +7,10 @@ body {
   margin: 0;
 }
 
+main {
+  min-height: calc(100vh - 3.5rem - 8rem);
+  margin-top: 3.5rem;
+}
 .backdrop {
   position: fixed;
   display: none;
@@ -58,8 +62,7 @@ body {
   color: #0e4f1f;
   text-decoration: none;
   font-weight: bold;
-  font-size: 22px;
-  height: 22px;
+  height: 2.5rem;
   display: inline-block;
   vertical-align: middle;
 }
@@ -147,8 +150,8 @@ body {
 
 .main-footer {
   background: black;
-  padding: 32px;
-  margin-top: 40px;
+  padding: 2rem;
+  margin-top: 3rem;
 }
 
 .main-footer__lists {
