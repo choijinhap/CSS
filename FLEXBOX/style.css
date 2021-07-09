@@ -1,0 +1,22 @@
+.parent{
+    display: flex;
+    height: 100vh;
+    justify-content: space-around;
+}
+.children{
+    background: blue;
+	width: 300px;
+    height: 300px;
+    color:white;
+    font-size: 50px;
+}
+
+.children:nth-child(2){
+    align-self: center;
+    order: 1;
+}
+
+.children:nth-child(3){
+    align-self: flex-end;
+    order: -1;
+}
