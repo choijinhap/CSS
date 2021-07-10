@@ -2,8 +2,12 @@
     display: flex;
     height: 100vh;
     justify-content: space-around;
+    flex-wrap: nowrap;
 }
 .children{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: blue;
 	width: 300px;
     height: 300px;
@@ -11,7 +15,7 @@
     font-size: 50px;
 }
 
-.children:nth-child(2){
+/* .children:nth-child(2){
     align-self: center;
     order: 1;
 }
@@ -19,4 +23,9 @@
 .children:nth-child(3){
     align-self: flex-end;
     order: -1;
+} */
+
+.children:nth-child(2){
+    flex-shrink: 3;
+    background-color: black;
 }
